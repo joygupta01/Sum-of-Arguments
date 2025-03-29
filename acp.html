@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of arguments</title>
+</head>
+<body>
+    <p id="aa"></p>
+    <script>
+        function findsum(){
+            var sum=0
+            for (i=0;i<arguments.length;i++){
+                sum+=arguments[i]
+            }
+        
+            return sum
+        }
+            document.getElementById("aa").innerHTML= findsum(20,50,70);
+    </script>
+</body>
+</html>
